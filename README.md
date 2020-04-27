@@ -1,24 +1,32 @@
-# README
+# Simple RoR REST API
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+This application makes RoR REST API
 
-Things you may want to cover:
+Use POSTMAN to check requests:
 
-* Ruby version
+* check all articles
+POSTMAN: GET postman http://localhost:3000/api/v1/articles
 
-* System dependencies
+* check a particular article
+POSTMAN:GET http://localhost:3000/api/v1/articles/1
 
-* Configuration
+* Create an article
+POSTMAN POST http://localhost:3000/api/v1/articles/
+Headers: Content-type application/json
+Body(raw):
+{
+	"title": "Some title",
+	"body":  "Some body"
+}
 
-* Database creation
+* Update an article
+POSTMAN PATCH http://localhost:3000/api/v1/articles/5
+Headers: Content-type application/json
+Body(raw):
+{
+	"title": "New title",
+	"body":  ""
+}
 
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+* Delete an article
+POSTMAN DELETE http://localhost:3000/api/v1/articles/5
