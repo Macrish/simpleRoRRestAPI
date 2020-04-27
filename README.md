@@ -3,6 +3,7 @@
 This application makes RoR REST API
 
 --api  give sove extra tools in app which you need for api
+
 rails new simpleRoRRestAPI --api 
 
 Use POSTMAN to check requests:
