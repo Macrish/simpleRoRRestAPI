@@ -42,7 +42,7 @@ module Api
       end
 
       def article_params
-        params.permit(:title, :body)
+        params.permit(:id, :title, :body)
       end
     end
   end
